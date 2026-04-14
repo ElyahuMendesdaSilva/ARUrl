@@ -1,9 +1,6 @@
 "use client";
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from "recharts";
-import { MdOutlineInsertLink } from "react-icons/md";
-import { TbClick } from "react-icons/tb";
-import { FaDollarSign } from "react-icons/fa";
-import { TrendingUp } from "lucide-react";
+
 
 const clicksData = [
   { dia: "16 mar", cliques: 0 }, { dia: "19 mar", cliques: 0 },
@@ -35,24 +32,20 @@ export function Dashboard() {
 
       <div className="stats-grid">
         <div className="stat-card">
-          <div className="stat-icon blue"><MdOutlineInsertLink size={20} /></div>
           <div className="stat-value">9</div>
           <div className="stat-label">TOTAL DE LINKS</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon blue"><TbClick size={20} /></div>
           <div className="stat-value">16</div>
           <div className="stat-label">CLIQUES DO MÊS</div>
           <div className="stat-sub blue">18 total</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon blue"><FaDollarSign size={20} /></div>
           <div className="stat-value">R$ 0,64</div>
           <div className="stat-label">GANHOS DO MÊS</div>
           <div className="stat-sub blue">CPM R$ 40,00</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon blue"><TrendingUp size={20} /></div>
           <div className="stat-value">R$ 0,64</div>
           <div className="stat-label">GANHOS TOTAIS</div>
         </div>

@@ -1,7 +1,5 @@
 "use client";
 import { useState } from "react";
-import { MdOutlineInsertLink } from "react-icons/md";
-import { FiSearch, FiCopy, FiEdit2 } from "react-icons/fi";
 
 const linksIniciais = [
   { nome: "nao", encurtado: "arurl.app/r/uHXm9D", original: "https://www.google.com/...", cliques: 0, ganhos: "R$ 0,00" },
@@ -24,7 +22,6 @@ export function MeusLinks() {
       <p className="section-subtitle">{linksIniciais.length} links criados</p>
 
       <div className="search-bar">
-        <FiSearch color="#888" />
         <input
           type="text"
           placeholder="Buscar links..."
@@ -43,8 +40,6 @@ export function MeusLinks() {
                 <p className="link-original">{link.original}</p>
               </div>
               <div className="link-acoes">
-                <button title="Copiar"><FiCopy /></button>
-                <button title="Editar"><FiEdit2 /></button>
               </div>
             </div>
             <div className="link-footer">

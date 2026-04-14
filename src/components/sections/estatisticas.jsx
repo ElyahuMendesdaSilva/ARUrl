@@ -3,10 +3,6 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, Legend
 } from "recharts";
-import { MdOutlineInsertLink } from "react-icons/md";
-import { TbClick } from "react-icons/tb";
-import { FaDollarSign } from "react-icons/fa";
-import { TrendingUp } from "lucide-react";
 
 const top5 = [
   { nome: "google", cliques: 6 },
@@ -26,22 +22,18 @@ export function Estatisticas() {
 
       <div className="stats-grid">
         <div className="stat-card">
-          <div className="stat-icon blue"><MdOutlineInsertLink size={20} /></div>
           <div className="stat-value">9</div>
           <div className="stat-label">TOTAL DE LINKS</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon blue"><TbClick size={20} /></div>
           <div className="stat-value">20</div>
           <div className="stat-label">TOTAL DE CLIQUES</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon blue"><TrendingUp size={20} /></div>
           <div className="stat-value">2.2</div>
           <div className="stat-label">MÉDIA POR LINK</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon blue"><FaDollarSign size={20} /></div>
           <div className="stat-value">R$ 0,80</div>
           <div className="stat-label">GANHOS TOTAIS</div>
           <div className="stat-sub blue">CPM R$ 40,00</div>

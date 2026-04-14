@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./styles/dashboard.css";
+import styles from "@/app/styles/dashboard.css";
 import { LeftBar } from "@/components/barra_lateral/left_bar";
 
-import { Dashboard } from "@/components/sections/Dashboard";
-import { MeusLinks } from "@/components/sections/MeusLinks";
-import { Estatisticas } from "@/components/sections/Estatisticas";
-import { Saque } from "@/components/sections/Saque";
-import { Configuracoes } from "@/components/sections/Configuracoes";
+import { Dashboard } from "@/components/sections/dashboard";
+import { Estatisticas } from "@/components/sections/estatisticas";
+import { Saque } from "@/components/sections/saque";
+import { Configuracoes } from "@/components/sections/configuracoes";
+import { MeusLinks } from "@/components/sections/meuslinks";
 
 const sections = [
   <Dashboard />,
